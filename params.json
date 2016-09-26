@@ -1,0 +1,6 @@
+{
+  "name": "ibbmod",
+  "tagline": "Translated Japanese Discussion Board Software",
+  "body": "# ibbmod\r\nJapanese Discussion Board Software - Translated\r\n\r\nIt might not look like its translated in the code itself, but it has been tested, and everything that needs to be translated, is translated.\r\n\r\n## Installation\r\nDrag and drop the contents of the zip file into your FTP client that is connected to your WebServer. Refresh your page and you should be good to go!\r\n\r\n\r\n\r\nTranslated Japanese discussion board software.\r\nCopyright (C) 2016  Masoncodes\r\n\r\nThis program is free software: you can redistribute it and/or modify\r\nit under the terms of the GNU General Public License as published by\r\nthe Free Software Foundation, either version 3 of the License, or\r\n(at your option) any later version.\r\n\r\nThis program is distributed in the hope that it will be useful,\r\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\r\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\nGNU General Public License for more details.\r\n\r\nYou should have received a copy of the GNU General Public License\r\nalong with this program.  If not, see <http://www.gnu.org/licenses/>.\r\n(see LICENSE)\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
