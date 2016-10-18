@@ -12,118 +12,118 @@ if (phpversion()<"4.1.0") {
   * original by http://www.cj-c.com/
   ***********************************/
 // 2003/02/14 v1.0
-// 2003/02/22 v1.1 ƒwƒ‹ƒvA‰üs§ŒÀ
-// 2003/02/28 v1.2 Œg‘Ñ‘Î‰
-// 2003/03/04 v1.2b ŠÇ—ƒ‚[ƒhC³
-// 2003/03/08 v1.2d DoCoMo—pƒXƒLƒ“AƒŒƒX”’Ç‰Á
-// 2003/03/11 v1.2e url‚ğurlencode,skin_otherXViŠÇ—ƒpƒX
-// 2003/03/14 v1.3 ŠÇ—ÒƒAƒCƒRƒ“‚ÌƒoƒOC³AƒNƒbƒL[ƒAƒCƒRƒ“
-// 2003/03/17 v1.3b ŠÇ—ÒƒAƒCƒRƒ“ƒNƒbƒL[
-// 2003/03/20 v1.3c Fw’è–³‚µ
-// 2003/03/30 v1.4 ‹Ö~ƒzƒXƒgA‹Ö~ƒ[ƒhA“Áê•¶š’Ç‰Á
-// 2003/04/03 v1.45 ‰æ‘œƒJƒEƒ“ƒ^ƒoƒOC³
-// 2003/04/06 v1.5 ƒwƒbƒhƒ‰ƒCƒ“”AƒŒƒXe‹L–ƒzƒXƒg
-// 2003/04/08 v1.56 ƒŒƒXeƒAƒCƒRƒ“{$oyaicon}BURLƒNƒbƒL[{$curl}
-// 2003/07/26 v1.6 ‰ß‹ƒƒOƒIƒt‚Åƒtƒ@ƒCƒ‹–³‚¢ƒoƒOB570:if (PAST && is_array($kako))
-// 2004/01/08 v1.65 EzWEBƒXƒLƒ“”»’èƒ~ƒX
-// 2009/06/22 v1.7 XSSAÃŞ¨Ú¸ÄØÄ×ÊŞ°»ÙÆã«‚ğC³
-// 2010/03/25 v1.8 ƒ[ƒ‹’Ê’m‹@”\’Ç‰Á
+// 2003/02/22 v1.1 ãƒ˜ãƒ«ãƒ—ã€æ”¹è¡Œåˆ¶é™
+// 2003/02/28 v1.2 æºå¸¯å¯¾å¿œ
+// 2003/03/04 v1.2b ç®¡ç†ãƒ¢ãƒ¼ãƒ‰ä¿®æ­£
+// 2003/03/08 v1.2d DoCoMoç”¨ã‚¹ã‚­ãƒ³ã€ãƒ¬ã‚¹æ•°è¿½åŠ 
+// 2003/03/11 v1.2e urlã‚’urlencode,skin_otheræ›´æ–°ï¼ˆç®¡ç†ãƒ‘ã‚¹
+// 2003/03/14 v1.3 ç®¡ç†è€…ã‚¢ã‚¤ã‚³ãƒ³ã®ãƒã‚°ä¿®æ­£ã€ã‚¯ãƒƒã‚­ãƒ¼ã‚¢ã‚¤ã‚³ãƒ³
+// 2003/03/17 v1.3b ç®¡ç†è€…ã‚¢ã‚¤ã‚³ãƒ³ã‚¯ãƒƒã‚­ãƒ¼
+// 2003/03/20 v1.3c è‰²æŒ‡å®šç„¡ã—æ™‚
+// 2003/03/30 v1.4 ç¦æ­¢ãƒ›ã‚¹ãƒˆã€ç¦æ­¢ãƒ¯ãƒ¼ãƒ‰ã€ç‰¹æ®Šæ–‡å­—è¿½åŠ 
+// 2003/04/03 v1.45 ç”»åƒã‚«ã‚¦ãƒ³ã‚¿ãƒã‚°ä¿®æ­£
+// 2003/04/06 v1.5 ãƒ˜ãƒƒãƒ‰ãƒ©ã‚¤ãƒ³æ•°ã€ãƒ¬ã‚¹æ™‚è¦ªè¨˜äº‹ãƒ›ã‚¹ãƒˆ
+// 2003/04/08 v1.56 ãƒ¬ã‚¹æ™‚è¦ªã‚¢ã‚¤ã‚³ãƒ³{$oyaicon}ã€‚URLã‚¯ãƒƒã‚­ãƒ¼{$curl}
+// 2003/07/26 v1.6 éå»ãƒ­ã‚°ã‚ªãƒ•æ™‚ã§ãƒ•ã‚¡ã‚¤ãƒ«ç„¡ã„æ™‚ãƒã‚°ã€‚570:if (PAST && is_array($kako))
+// 2004/01/08 v1.65 EzWEBã‚¹ã‚­ãƒ³åˆ¤å®šãƒŸã‚¹
+// 2009/06/22 v1.7 XSSã€ï¾ƒï¾ï½¨ï¾šï½¸ï¾„ï¾˜ï¾„ï¾—ï¾Šï¾ï½°ï½»ï¾™è„†å¼±æ€§ã‚’ä¿®æ­£
+// 2010/03/25 v1.8 ãƒ¡ãƒ¼ãƒ«é€šçŸ¥æ©Ÿèƒ½è¿½åŠ 
 /*
-  ¡g—p•û–@@
-@@Eibbs.dat,icount.dat,ilog.log‚Ì‘®«‚ğ666‚©646‚É‚·‚éB
-  @E‰ß‹ƒƒOg—p‚Ìê‡‚Í¶¬ÃŞ¨Ú¸ÄØi./‚È‚çpublic_html“™)‚Ì‘®«777‚©757‚É‚·‚é
+  â– ä½¿ç”¨æ–¹æ³•ã€€
+ã€€ã€€ãƒ»ibbs.dat,icount.dat,ilog.logã®å±æ€§ã‚’666ã‹646ã«ã™ã‚‹ã€‚
+  ã€€ãƒ»éå»ãƒ­ã‚°ä½¿ç”¨ã®å ´åˆã¯ç”Ÿæˆï¾ƒï¾ï½¨ï¾šï½¸ï¾„ï¾˜ï¼ˆ./ãªã‚‰public_htmlç­‰)ã®å±æ€§777ã‹757ã«ã™ã‚‹
 */
 require_once("htmltemplate.inc"); 
 
-// ƒXƒNƒŠƒvƒg–¼
+// ã‚¹ã‚¯ãƒªãƒ—ãƒˆå
 define(PHP_SELF, "ibbs.php");
 
-// ƒƒOƒtƒ@ƒCƒ‹–¼(Œ ŒÀ‚ğ606,646,666“™‚É‚·‚é)
+// ãƒ­ã‚°ãƒ•ã‚¡ã‚¤ãƒ«å(æ¨©é™ã‚’606,646,666ç­‰ã«ã™ã‚‹)
 define(LOGFILE, "ibbs.dat");
 
-// ŠÇ—ƒpƒX
-define(ADMINPASS, "sage17");
+// ç®¡ç†ãƒ‘ã‚¹
+define(ADMINPASS, "admin");
 
-// “Še’Ê’mƒ[ƒ‹‚ğ‘—‚éyes=1 no=0
+// æŠ•ç¨¿é€šçŸ¥ãƒ¡ãƒ¼ãƒ«ã‚’é€ã‚‹yes=1 no=0
 define(NOTICE, 0);
-// ’Ê’mƒ[ƒ‹‘—Mæ
+// é€šçŸ¥ãƒ¡ãƒ¼ãƒ«é€ä¿¡å…ˆ
 $admin_mail = "all@s.to";
 
-// ƒŒƒX‚ª‚Â‚¢‚½‚ç‹L–‚ğã‚°‚éHyes=1 no=0
+// ãƒ¬ã‚¹ãŒã¤ã„ãŸã‚‰è¨˜äº‹ã‚’ä¸Šã’ã‚‹ï¼Ÿyes=1 no=0
 define(AGE, 1);
 
-// URL‚ğ©“®ƒŠƒ“ƒN‚·‚éH
+// URLã‚’è‡ªå‹•ãƒªãƒ³ã‚¯ã™ã‚‹ï¼Ÿ
 define(AUTOLINK, 1);
-// “ŠeŒã‚Ì”ò‚Ñæ
+// æŠ•ç¨¿å¾Œã®é£›ã³å…ˆ
 $jump = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
 
-// “Še§ŒÀ•¶š”Bã‚©‚ç–¼‘OAƒ^ƒCƒgƒ‹AƒRƒƒ“ƒgB”¼Šp‚Å
+// æŠ•ç¨¿åˆ¶é™æ–‡å­—æ•°ã€‚ä¸Šã‹ã‚‰åå‰ã€ã‚¿ã‚¤ãƒˆãƒ«ã€ã‚³ãƒ¡ãƒ³ãƒˆã€‚åŠè§’ã§
 define(MAXNAME, 32);
 define(MAXSUBJ, 32);
 define(MAXCOM, 1000);
-// Å¬•¶š”
+// æœ€å°æ–‡å­—æ•°
 define(MINCOM, 4);
-// ‰üs”§ŒÀ
+// æ”¹è¡Œæ•°åˆ¶é™
 define(MAXBR, 20);
 
-// e‹L–Å‘åƒƒO•ÛŒ”
+// è¦ªè¨˜äº‹æœ€å¤§ãƒ­ã‚°ä¿æŒä»¶æ•°
 define(MAXLOG, 40);
 
-// ƒwƒbƒhƒ‰ƒCƒ“•\¦Œ”(ª‚Ì”ˆÈ‰º‚Åj
+// ãƒ˜ãƒƒãƒ‰ãƒ©ã‚¤ãƒ³è¡¨ç¤ºä»¶æ•°(â†‘ã®æ•°ä»¥ä¸‹ã§ï¼‰
 define(MAXHEADLINE, 30);
 
-// Fw’è‚ª‚È‚¢‚ÌF
+// è‰²æŒ‡å®šãŒãªã„æ™‚ã®è‰²
 define(NOCOL, "#666666");
 
-// ƒAƒCƒRƒ“‚Ìİ’è
-// ƒAƒCƒRƒ“—pƒfƒBƒŒƒNƒgƒŠ
+// ã‚¢ã‚¤ã‚³ãƒ³ã®è¨­å®š
+// ã‚¢ã‚¤ã‚³ãƒ³ç”¨ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª
 define(I_DIR, "./Icon/");
-// HTML•\¦—pƒAƒCƒRƒ“ˆê—— 'ƒtƒ@ƒCƒ‹–¼'=>'ƒAƒCƒRƒ“–¼'‚ğƒyƒA‚Å
+// HTMLè¡¨ç¤ºç”¨ã‚¢ã‚¤ã‚³ãƒ³ä¸€è¦§ 'ãƒ•ã‚¡ã‚¤ãƒ«å'=>'ã‚¢ã‚¤ã‚³ãƒ³å'ã‚’ãƒšã‚¢ã§
 $html_icon = array('randam'=>'Random','cat1.gif'=>'Cat','dog1.gif'=>'Dog',
                    'rob1.gif'=>'Robot','pen1.gif'=>'Penguin','td1.gif'=>'Bear',
                    'rabi1.gif'=>'Rabbit','ball1.gif'=>'Bouncing Ball','tel1.gif'=>'Ghost Thing','master'=>'Ram');
-// ƒ‰ƒ“ƒ_ƒ€‚Ì‰æ‘œŒó•â
+// ãƒ©ãƒ³ãƒ€ãƒ ã®ç”»åƒå€™è£œ
 $rand_icon = array('cat1.gif','dog1.gif','rob1.gif','pen1.gif','td1.gif','rabi1.gif','ball1.gif','tel1.gif');
 
-// ŠÇ—Ò—pƒAƒCƒRƒ“
+// ç®¡ç†è€…ç”¨ã‚¢ã‚¤ã‚³ãƒ³
 $mas_i= array('master.gif','master2.gif','master3.gif');
-// ŠÇ—ÒƒAƒCƒRƒ“ƒpƒXƒ[ƒh íœƒL[‚É“ü‚ê‚é g‚¢•ª‚¯‚é‚±‚Æ‚É‚æ‚Á‚Ä•¡”‚ÌŠÇ—ÒƒAƒCƒRƒ“‚ªg—p‰Â”\
+// ç®¡ç†è€…ã‚¢ã‚¤ã‚³ãƒ³ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ å‰Šé™¤ã‚­ãƒ¼ã«å…¥ã‚Œã‚‹ ä½¿ã„åˆ†ã‘ã‚‹ã“ã¨ã«ã‚ˆã£ã¦è¤‡æ•°ã®ç®¡ç†è€…ã‚¢ã‚¤ã‚³ãƒ³ãŒä½¿ç”¨å¯èƒ½
 $mas_p= array('7777','8888','9999');
-$Ico_h= 5; // ƒAƒCƒRƒ“ˆê——‚Å‰üs‚ğ‚·‚é”
+$Ico_h= 5; // ã‚¢ã‚¤ã‚³ãƒ³ä¸€è¦§ã§æ”¹è¡Œã‚’ã™ã‚‹æ•°
 
-// •¶šF
+// æ–‡å­—è‰²
 $font = array('#585858','#C043E0','#3947C6','#F25353','#EF8816','#67AC22','#34A086','#7191FF','#FF819B');
-// ˜güF
+// æ ç·šè‰²
 $hr   = array('#FAAFAB','#FBB85E','#C785E0','#9FC1FB','#EDE94E','#70D179','#969696','#C8CCFF','#E0D0B0');
 
-// ‰{——‹Ö~ƒzƒXƒg
+// é–²è¦§ç¦æ­¢ãƒ›ã‚¹ãƒˆ
 $no_host[] = 'kantei.go.jp';
 $no_host[] = 'anonymizer.com';
 
-// g—p‹Ö~ƒ[ƒh
-$no_word[] = '€‚Ë';
+// ä½¿ç”¨ç¦æ­¢ãƒ¯ãƒ¼ãƒ‰
+$no_word[] = 'æ­»ã­';
 $no_word[] = '<img';
 $no_word[] = '<script';
 $no_word[] = 'http:';
 
-// ‰ß‹ƒƒO‹@”\‚ğg‚¤HYes=1,No=0ig—p‚·‚éê‡‚Í•Û‘¶ÃŞ¨Ú¸ÄØ‚ğ757,777“™‚É‚·‚éj
+// éå»ãƒ­ã‚°æ©Ÿèƒ½ã‚’ä½¿ã†ï¼ŸYes=1,No=0ï¼ˆä½¿ç”¨ã™ã‚‹å ´åˆã¯ä¿å­˜ï¾ƒï¾ï½¨ï¾šï½¸ï¾„ï¾˜ã‚’757,777ç­‰ã«ã™ã‚‹ï¼‰
 define(PAST, 0);
-define(PASTLOG, "ilog.log"); // ‰ß‹ƒƒOƒJƒEƒ“ƒgƒtƒ@ƒCƒ‹
-define(PASTDIR, "./");       // ‰ß‹ƒƒO¶¬ƒfƒBƒŒƒNƒgƒŠ(/‚ÅI‚í‚é–)
-define(PASTSIZE, "100");     // ‰ß‹ƒƒO‹L˜^” KB
-define(PASTDEF, 20);         // ‰ß‹ƒƒOƒ‚[ƒh‚Å‚Ì•\¦Œ”
+define(PASTLOG, "ilog.log"); // éå»ãƒ­ã‚°ã‚«ã‚¦ãƒ³ãƒˆãƒ•ã‚¡ã‚¤ãƒ«
+define(PASTDIR, "./");       // éå»ãƒ­ã‚°ç”Ÿæˆãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª(/ã§çµ‚ã‚ã‚‹äº‹)
+define(PASTSIZE, "100");     // éå»ãƒ­ã‚°è¨˜éŒ²æ•° KB
+define(PASTDEF, 20);         // éå»ãƒ­ã‚°ãƒ¢ãƒ¼ãƒ‰ã§ã®è¡¨ç¤ºä»¶æ•°
 
-// ƒJƒEƒ“ƒ^‚ğg‚¤H
+// ã‚«ã‚¦ãƒ³ã‚¿ã‚’ä½¿ã†ï¼Ÿ
 define(COUNTER, 1);
-define(COUNTIMG, "");    //ƒJƒEƒ“ƒ^‰æ‘œ‚ÌƒfƒBƒŒƒNƒgƒŠiƒeƒLƒXƒg‚Ìê‡‚Í‹óB/‚ÅI‚í‚éj
-define(COUNTLOG, "icount.dat"); //ƒJƒEƒ“ƒ^ƒtƒ@ƒCƒ‹(Œ ŒÀ‚ğ606,646,666“™‚É‚·‚é)
+define(COUNTIMG, "");    //ã‚«ã‚¦ãƒ³ã‚¿ç”»åƒã®ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªï¼ˆãƒ†ã‚­ã‚¹ãƒˆã®å ´åˆã¯ç©ºã€‚/ã§çµ‚ã‚ã‚‹ï¼‰
+define(COUNTLOG, "icount.dat"); //ã‚«ã‚¦ãƒ³ã‚¿ãƒ•ã‚¡ã‚¤ãƒ«(æ¨©é™ã‚’606,646,666ç­‰ã«ã™ã‚‹)
 
-// ‹@í”»•Ê
+// æ©Ÿç¨®åˆ¤åˆ¥
 //$ua = explode("/", getenv('HTTP_USER_AGENT'));
-//ibbs.php?ua=DoCoMo‚Æ‚©
+//ibbs.php?ua=DoCoMoã¨ã‹
 if ($_GET['ua']) $ua[0] = $_GET['ua'];
 if(preg_match("/^KDDI/",$ua[0])){
-  //WAP2.0‚Ìê‡
+  //WAP2.0ã®å ´åˆ
   define(MAINFILE, "i_skin_main.html");
   define(OTHERFILE, "i_skin_other.html");
   define(PAGEDEF, 5);
@@ -135,60 +135,60 @@ switch( $ua[0] ){
 case "PDXGW" :
   //H"
 case "UP.Browser" :
-  //HDML‚Ìê‡
+  //HDMLã®å ´åˆ
 case "J-PHONE" :
-  //J-PHONE‚Ìê‡
+  //J-PHONEã®å ´åˆ
 case "DoCoMo" :
-  // ƒfƒUƒCƒ“ƒtƒ@ƒCƒ‹Œg‘Ñ
+  // ãƒ‡ã‚¶ã‚¤ãƒ³ãƒ•ã‚¡ã‚¤ãƒ«æºå¸¯
   define(MAINFILE, "i_skin_main.html");
   define(OTHERFILE, "i_skin_other.html");
-  define(PAGEDEF, 5);//e‹L–•\¦”
-  define(RESDEF, 3);//ƒŒƒX•\¦”
-  define(RESEVERY, 5);//ƒŒƒXHŒ‚¸‚Â
-  define(MOBILE, 1);//Œg‘Ñƒ‚[ƒh‚Í“ú•t•\¦È—ª
+  define(PAGEDEF, 5);//è¦ªè¨˜äº‹è¡¨ç¤ºæ•°
+  define(RESDEF, 3);//ãƒ¬ã‚¹è¡¨ç¤ºæ•°
+  define(RESEVERY, 5);//ãƒ¬ã‚¹ï¼Ÿä»¶ãšã¤
+  define(MOBILE, 1);//æºå¸¯ãƒ¢ãƒ¼ãƒ‰ã¯æ—¥ä»˜è¡¨ç¤ºçœç•¥
   break;
-case 'line'://ˆêsƒŒƒX
-  // ƒfƒUƒCƒ“ƒtƒ@ƒCƒ‹PC
+case 'line'://ä¸€è¡Œãƒ¬ã‚¹
+  // ãƒ‡ã‚¶ã‚¤ãƒ³ãƒ•ã‚¡ã‚¤ãƒ«PC
   define(MAINFILE, "skin_main_line.html");
   define(OTHERFILE, "skin_other.html");
-  // 1ƒy[ƒW‚É•\¦‚·‚ée‹L–”
+  // 1ãƒšãƒ¼ã‚¸ã«è¡¨ç¤ºã™ã‚‹è¦ªè¨˜äº‹æ•°
   define(PAGEDEF, 5);
-  // 1e‹L–‚É•\¦‚·‚éƒŒƒX”
+  // 1è¦ªè¨˜äº‹ã«è¡¨ç¤ºã™ã‚‹ãƒ¬ã‚¹æ•°
   define(RESDEF, 5);
-  // æ“ªHŒAÅVHŒ•\¦
+  // å…ˆé ­ï¼Ÿä»¶ã€æœ€æ–°ï¼Ÿä»¶è¡¨ç¤º
   define(RESEVERY, 10);
   break;
 default :
-  // ƒfƒUƒCƒ“ƒtƒ@ƒCƒ‹PC
+  // ãƒ‡ã‚¶ã‚¤ãƒ³ãƒ•ã‚¡ã‚¤ãƒ«PC
   define(MAINFILE, "skin_main.html");
   define(OTHERFILE, "skin_other.html");
-  // 1ƒy[ƒW‚É•\¦‚·‚ée‹L–”
+  // 1ãƒšãƒ¼ã‚¸ã«è¡¨ç¤ºã™ã‚‹è¦ªè¨˜äº‹æ•°
   define(PAGEDEF, 5);
-  // 1e‹L–‚É•\¦‚·‚éƒŒƒX”
+  // 1è¦ªè¨˜äº‹ã«è¡¨ç¤ºã™ã‚‹ãƒ¬ã‚¹æ•°
   define(RESDEF, 5);
-  // æ“ªHŒAÅVHŒ•\¦
+  // å…ˆé ­ï¼Ÿä»¶ã€æœ€æ–°ï¼Ÿä»¶è¡¨ç¤º
   define(RESEVERY, 10);
-  // Œg‘Ñ‚Í“ú•t‚ğÈ—ª
+  // æºå¸¯æ™‚ã¯æ—¥ä»˜ã‚’çœç•¥
   define(MOBILE, 0);
   break;
 }
-//---İ’è‚±‚±‚Ü‚Å
+//---è¨­å®šã“ã“ã¾ã§
 
-// ‹Ö~ƒzƒXƒg
+// ç¦æ­¢ãƒ›ã‚¹ãƒˆ
 if (is_array($no_host)) {
   $host = gethostbyaddr($_SERVER["REMOTE_ADDR"]);
   foreach ($no_host as $user) {
     if(eregi($user, $host)){
-      header("Status: 204\n\n");//‹ó”’ƒy[ƒW
+      header("Status: 204\n\n");//ç©ºç™½ãƒšãƒ¼ã‚¸
       exit;
     }
   }
 }
-/*-- ƒJƒEƒ“ƒ^ --*/
+/*-- ã‚«ã‚¦ãƒ³ã‚¿ --*/
 if (COUNTER) {
-  // ¸¯·°‚ğƒZƒbƒgBƒŠƒ[ƒh–h~—p
+  // ï½¸ï½¯ï½·ï½°ã‚’ã‚»ãƒƒãƒˆã€‚ãƒªãƒ­ãƒ¼ãƒ‰é˜²æ­¢ç”¨
   setcookie("ibbs[count]", 1, time()+14*86400);
-  // ¸¯·°‚ª‚È‚¯‚ê‚Î‰–K–âB‚ÅƒJƒEƒ“ƒgƒAƒbƒv
+  // ï½¸ï½¯ï½·ï½°ãŒãªã‘ã‚Œã°åˆè¨ªå•ã€‚ã§ã‚«ã‚¦ãƒ³ãƒˆã‚¢ãƒƒãƒ—
   if (!isset($_COOKIE['ibbs']['count'])) {
     $fp = fopen(COUNTLOG, "r+");
     $c = fgets($fp, 10);
@@ -201,11 +201,11 @@ if (COUNTER) {
   }
   $cc = file(COUNTLOG);
   $c = $cc[0];
-  // ‰æ‘œ‚ğg‚¤ê‡
+  // ç”»åƒã‚’ä½¿ã†å ´åˆ
   if (COUNTIMG) {
-    // alt‚ğ“¾‚é
+    // altã‚’å¾—ã‚‹
     $size = @getimagesize(COUNTIMG."0.gif");
-    // Œ…”•ªƒ‹[ƒv
+    // æ¡æ•°åˆ†ãƒ«ãƒ¼ãƒ—
     for ($i = 0; $i < strlen($c); $i++) {
       $n = substr($c, $i, 1);
       $count.="<img src=\"".COUNTIMG.$n.".gif\" alt=".$n." ".$size[3].">";
@@ -213,10 +213,10 @@ if (COUNTER) {
     $c = $count;
   }
 }
-/*-- FHTMLì¬ --*/
+/*-- è‰²HTMLä½œæˆ --*/
 function radio_list($name, $select="") {
   global $font,$hr;
-  // ¸¯·°‚ª–³‚¢ê‡‚Í0”Ô–Ú‚ÉƒZƒbƒg
+  // ï½¸ï½¯ï½·ï½°ãŒç„¡ã„å ´åˆã¯0ç•ªç›®ã«ã‚»ãƒƒãƒˆ
   if (!isset($_COOKIE['ibbs'][$name])) $select = ${$name}[0];
   foreach ($$name as $l=>$col) {
     if ($_COOKIE['ibbs'][$name] == $col || $select == $col) $arg[$l]['chk'] = " checked";
@@ -224,7 +224,7 @@ function radio_list($name, $select="") {
   }
   return $arg;
 }
-/*-- ƒAƒCƒRƒ“HTMLì¬ --*/
+/*-- ã‚¢ã‚¤ã‚³ãƒ³HTMLä½œæˆ --*/
 function option_list($select="") {
   global $html_icon,$mas_i;
   $l = 0;
@@ -237,7 +237,7 @@ function option_list($select="") {
   }
   return $arg;
 }
-/*-- ‘S‹L–•\¦ --*/
+/*-- å…¨è¨˜äº‹è¡¨ç¤º --*/
 function all_view($page,$mode="") {
   global $html_icon,$font,$hr,$c;
 
@@ -245,24 +245,24 @@ function all_view($page,$mode="") {
     $pass = ($_GET['pass']) ? $_GET['pass'] : $_POST['pass'];
     if ($pass != ADMINPASS) error("Password is Incorrect!");
   }
-  // ƒƒO‚ğ”z—ñ‚ÉŠi”[
+  // ãƒ­ã‚°ã‚’é…åˆ—ã«æ ¼ç´
   $lines = file(LOGFILE);
-  // Å‰‚Íƒy[ƒW0
+  // æœ€åˆã¯ãƒšãƒ¼ã‚¸0
   if (!$page) $page = 0;
   $p = 1;
   $o = 0;
-  // ÅIXV“ú
+  // æœ€çµ‚æ›´æ–°æ—¥
   list(,,,,$up) = explode("<>", $lines[0]);
   $arg['update'] = gmdate("Y/m/d(D) H:i:s",time()+9*60*60);
-  // ƒwƒbƒhƒ‰ƒCƒ“
+  // ãƒ˜ãƒƒãƒ‰ãƒ©ã‚¤ãƒ³
   for ($h = 1; $h < count($lines); $h++) {
     list($num,,,,$subj,,,,,$type,)  = explode("<>", $lines[$h]);
-    // ƒŒƒX‚Ìê‡
+    // ãƒ¬ã‚¹ã®å ´åˆ
     if ($type) {
       if (!is_array($res[$type])) $res[$type] = array();
       array_unshift($res[$type], $lines[$h]);
     }
-    // e‹L–‚Ìê‡Be”z—ñì¬
+    // è¦ªè¨˜äº‹ã®å ´åˆã€‚è¦ªé…åˆ—ä½œæˆ
     else {
       $oya[] = $lines[$h];
       $res_num = count($res[$num]);
@@ -282,7 +282,7 @@ function all_view($page,$mode="") {
     array_splice($arg['headline'], 0, $page);
     array_splice($arg['headline'], MAXHEADLINE);
   }
-  // e‹L–“WŠJ
+  // è¦ªè¨˜äº‹å±•é–‹
   for ($i = $page; $i < $page+PAGEDEF; $i++) {
     if (!trim($oya[$i])) continue;
     list($num,$date,$name,$email,$subj,$com,$url,$col,$icon,$type,,$host) = explode("<>", $oya[$i]);
@@ -293,16 +293,16 @@ function all_view($page,$mode="") {
     if ($icon) $icon = I_DIR.$icon;
     if ($mode!="admin" && AUTOLINK) $com = autolink($com);
     if (MOBILE) $date = substr($date, 5, 5) . substr($date, 15, 6);
-    // ŠÇ—ƒ‚[ƒh–{•¶È—ª
+    // ç®¡ç†ãƒ¢ãƒ¼ãƒ‰æ™‚æœ¬æ–‡çœç•¥
     if ($mode == "admin") {
       $com = str_replace("<br>", " ", $com);
       $com = substr($com, 0, 60) . "..";
     }
     $cnt = $i+1;
     $res_cnt = count($res[$num]);
-    // e‹L–Ši”[
+    // è¦ªè¨˜äº‹æ ¼ç´
     $arg['oya'][$o] = compact('cnt','res_cnt','num','date','name','email','subj','com','b_color','color','icon','url','host','page');
-    // ƒŒƒX”ƒI[ƒo[H
+    // ãƒ¬ã‚¹æ•°ã‚ªãƒ¼ãƒãƒ¼ï¼Ÿ
     $rst = $res_cnt-RESDEF;
     if ($rst <= 0) {
       $rst = 0;
@@ -311,13 +311,13 @@ function all_view($page,$mode="") {
     else {
       $arg['oya'][$o]['over'] = true;
     }
-    // ŠÇ—ƒ‚[ƒh‚Í‘SƒŒƒX•\¦
+    // ç®¡ç†ãƒ¢ãƒ¼ãƒ‰æ™‚ã¯å…¨ãƒ¬ã‚¹è¡¨ç¤º
     if ($mode == "admin") {
       $rst = 0;
       $arg['pass'] = $pass;
       $arg['size'] = filesize(LOGFILE);
     }
-    // ƒŒƒX“WŠJ
+    // ãƒ¬ã‚¹å±•é–‹
     for ($j=$rst; $j<count($res[$num]); $j++) {
       list($rnum,$rdate,$rname,$remail,$rsubj,$rcom,$rurl,$rcol,$ricon,,,$host) = explode("<>", $res[$num][$j]);
       list($rcolor,$rb_color) = explode(";", $rcol);
@@ -330,23 +330,23 @@ function all_view($page,$mode="") {
         $rcom = str_replace("<br>", " ", $rcom);
         $rcom = substr($rcom, 0, 60) . "..";
       }
-      // ƒŒƒX‹L–Ši”[
+      // ãƒ¬ã‚¹è¨˜äº‹æ ¼ç´
       $rres[$o][] = array('cnt'=>$j+1,'num'=>$rnum,'date'=>$rdate,'name'=>$rname,'email'=>$remail,'subj'=>$rsubj,
                           'com'=>$rcom,'b_color'=>$rb_color,'color'=>$rcolor,'icon'=>$ricon,'url'=>$rurl,'host'=>$host
                           );
     }
-    // e‹L–Ši”[
+    // è¦ªè¨˜äº‹æ ¼ç´
     $arg['oya'][$o]['res'] = $rres[$o];
     $o++;
   }
 
   if ($mode == "admin") $qry = "&mode=admin&pass=".$arg['pass'];
-  // ƒy[ƒW‘O/Ÿ
+  // ãƒšãƒ¼ã‚¸å‰/æ¬¡
   $prev = $page - PAGEDEF;
   $next = $i;
   if ($prev >= 0)          $arg['prev'] = "{$_SERVER['PHP_SELF']}?page=$prev$qry";
   if ($next < count($oya)) $arg['next'] = "{$_SERVER['PHP_SELF']}?page=$next$qry";
-  // ƒy[ƒW’¼ÚˆÚ“®
+  // ãƒšãƒ¼ã‚¸ç›´æ¥ç§»å‹•
   $tpage = (int)count($oya) / PAGEDEF;
   for ($a = 0; $a < $tpage; $a++) {
     if ($a == $page/PAGEDEF) $arg['paging'].= "[<b>$a</b>] ";
@@ -363,7 +363,7 @@ function all_view($page,$mode="") {
   $arg['maxcom'] = MAXCOM;
   if (PAST) $arg['kako'] = true;
 
-  // ƒNƒbƒL[
+  // ã‚¯ãƒƒã‚­ãƒ¼
   $arg['cname'] = $_COOKIE['ibbs']['name'];
   $arg['cemail'] = $_COOKIE['ibbs']['email'];
   $arg['cpass'] = $_COOKIE['ibbs']['pass'];
@@ -384,7 +384,7 @@ function all_view($page,$mode="") {
   }
 }
 
-/*-- ŒÂ•Ê•\¦ --*/
+/*-- å€‹åˆ¥è¡¨ç¤º --*/
 function res_view($num) {
   global $html_icon;
 
@@ -395,20 +395,20 @@ function res_view($num) {
   while (!feof ($fd)) {
     $buf = fgets($fd, 4096);
     $line = explode("<>", $buf);
-    // e‹L–
+    // è¦ªè¨˜äº‹
     if ($line[9]=="0") {
-      // ŠY“–‹L–‚È‚çI—¹
+      // è©²å½“è¨˜äº‹ãªã‚‰çµ‚äº†
       if ($num == $line[0]) break;
-      // ˆá‚¤‚È‚çˆê‚©‚ç
+      // é•ã†ãªã‚‰ä¸€ã‹ã‚‰
       $res = array();
     }
     else{
-      array_unshift($res, $buf);// ƒŒƒX‚ğ’™‚ß‚é
+      array_unshift($res, $buf);// ãƒ¬ã‚¹ã‚’è²¯ã‚ã‚‹
     }
   }
   fclose ($fd);
 
-  // old-Å‰‚©‚çHŒAnew-ÅVHŒAall-‘SƒŒƒX•\¦A’Êí-ÅVXŒ
+  // old-æœ€åˆã‹ã‚‰ï¼Ÿä»¶ã€new-æœ€æ–°ï¼Ÿä»¶ã€all-å…¨ãƒ¬ã‚¹è¡¨ç¤ºã€é€šå¸¸-æœ€æ–°Xä»¶
   switch ($_GET['res']) {
     case 'old': $st = 0; $to = RESEVERY; break;
     case 'new': $st = count($res)-RESEVERY; $to = count($res); break;
@@ -417,7 +417,7 @@ function res_view($num) {
   }
   if ($st < 0) $st = 0;
 
-  // ƒŒƒX“WŠJ
+  // ãƒ¬ã‚¹å±•é–‹
   for ($i = $st; $i < $to; $i++) {
     if ($res[$i] == "") continue;
     list($rnum,$rdate,$rname,$remail,$rsubj,$rcom,$rurl,$rcol,$ricon,,,$rhost) = explode("<>", $res[$i]);
@@ -425,7 +425,7 @@ function res_view($num) {
     if ($rcolor == "") $rcolor = NOCOL;
     if ($rb_color == "") $rb_color = NOCOL;
     if ($rurl) $rurl = "http://".$rurl;
-    // ˆø—p
+    // å¼•ç”¨
     if (isset($_GET['q']) && $_GET['q'] == $rnum) {
       $q_com = "&gt;$rcom";
       $rrcom = str_replace("<br>","\r&gt;",$q_com);
@@ -433,18 +433,18 @@ function res_view($num) {
     else {
       if (AUTOLINK) $rcom = autolink($rcom);
     }
-    // ƒŒƒX‹L–Ši”[
+    // ãƒ¬ã‚¹è¨˜äº‹æ ¼ç´
     $rres[] = array('cnt'=>$i+1,'num'=>$rnum,'date'=>$rdate,'name'=>$rname,'email'=>$remail,'subj'=>$rsubj,
                     'com'=>$rcom,'b_color'=>$rb_color,'color'=>$rcolor,'icon'=>I_DIR.$ricon,'url'=>$rurl,'host'=>$rhost
                     );
   }
-  // e‹L–
+  // è¦ªè¨˜äº‹
   list($num,$date,$name,$email,$subj,$com,$url,$col,$icon,$type,,$host) = explode("<>", $buf);
   list($color,$b_color) = explode(";", $col);
   if ($color == "") $color = NOCOL;
   if ($b_color == "") $b_color = NOCOL;
   if ($url) $url = "http://".$url;
-  // ˆø—p
+  // å¼•ç”¨
   if (isset($_GET['q']) && $_GET['q'] == $num) {
     $q_com = "&gt;$com";
     $rrcom = str_replace("<br>","\r&gt;",$q_com);
@@ -452,7 +452,7 @@ function res_view($num) {
   else {
     if (AUTOLINK) $com = autolink($com);
   }
-  // e‹L–Ši”[
+  // è¦ªè¨˜äº‹æ ¼ç´
   $arg = array('res'=>$rres,'num'=>$num,'date'=>$date,'name'=>$name,'email'=>$email,
                 'subj'=>$subj,'com'=>$com,'b_color'=>$b_color,'color'=>$color,'oyaicon'=>I_DIR.$icon,'url'=>$url,
                 'page'=>$_GET['page'],'rsubj'=>"Re: $subj", 'rcom'=>$rrcom,'host'=>$host
@@ -465,7 +465,7 @@ function res_view($num) {
   $arg['title'] = "Post No. $num Reply [Normal/Quote Display]";
   $arg['maxcom'] = MAXCOM;
   $arg['self'] = PHP_SELF;
-  // ƒNƒbƒL[
+  // ã‚¯ãƒƒã‚­ãƒ¼
   $arg['cname'] = $_COOKIE['ibbs']['name'];
   $arg['cemail'] = $_COOKIE['ibbs']['email'];
   $arg['cpass'] = $_COOKIE['ibbs']['pass'];
@@ -473,13 +473,13 @@ function res_view($num) {
 
   HtmlTemplate::t_include(OTHERFILE,$arg);
 }
-/*-- ‘‚İ‘Oˆ— --*/
+/*-- æ›¸è¾¼ã¿å‰å‡¦ç† --*/
 function check() {
   global $rand_icon,$mas_i,$mas_p,$no_word;
   //No<>Y/m/d(D) h:i:s<>name<>email<>subj<>com<>url<>#ffffff;#back<>icon.gif<>oyaNo<>crypt<>ip<><>
 
   if (trim($_POST['name'])=="")   error("No Name Entered.");
-  if (ereg("^( |@|\t|\r|\n)*$",$_POST['comment'])) error("No Comment Entered.");
+  if (ereg("^( |ã€€|\t|\r|\n)*$",$_POST['comment'])) error("No Comment Entered.");
   if (strlen($_POST['pass']) > 8) error("Deletion key must be at least 8 characters long.");
   if (strlen($_POST['name']) > MAXNAME) error("Name is too long.");
   if (strlen($_POST['subject']) > MAXSUBJ)  error("Title is too long.");
@@ -488,7 +488,7 @@ function check() {
   if ($_POST['email'] && !ereg("(.*)@(.*)\.(.*)", $_POST['email']))
     error("Email Invalid.");
 
-  // ‹Ö~ƒ[ƒh
+  // ç¦æ­¢ãƒ¯ãƒ¼ãƒ‰
   if (is_array($no_word)) {
     foreach ($no_word as $fuck) {
       if (ereg($fuck, $_POST['comment'])) error("Invalid Characters in Body Text");
@@ -497,16 +497,16 @@ function check() {
     }
   }
   if (preg_match("/(<a\b[^>]*?>|\[url(?:\s?=|\]))|href=/i", $_POST['comment'])) error("Error!");
-  // •›‘è
+  // å‰¯é¡Œ
   if ($_POST['sex']) $_POST['subject'] = $_POST['sex']."/".$_POST['subject'];
 
-  // ƒ‰ƒ“ƒ_ƒ€ƒAƒCƒRƒ“
+  // ãƒ©ãƒ³ãƒ€ãƒ ã‚¢ã‚¤ã‚³ãƒ³
   if ($_POST['ico']=="randam") {
     mt_srand((double)microtime()*1000000);
     $randval = mt_rand(0, (count($rand_icon)-1));
     $ico = $rand_icon[$randval];
   }
-  // ŠÇ—ÒƒAƒCƒRƒ“
+  // ç®¡ç†è€…ã‚¢ã‚¤ã‚³ãƒ³
   elseif ($_POST['ico']=="master") {
     $find = false;
     foreach ($mas_p as $l=>$mpass) {
@@ -520,21 +520,21 @@ function check() {
   else{
     $ico = $_POST['ico'];
   }
-  // ‘S$_POST‚É“K—p
+  // å…¨$_POSTã«é©ç”¨
   $post = array_map("htmlspecialchars",$_POST);
   if (get_magic_quotes_gpc())
     $post = array_map("stripslashes", $post);
-  // –³‘è
+  // ç„¡é¡Œ
   if (trim($post['subject'])=="") $post['subject'] = "(Untitled)";
-  // ‰üsˆ—
+  // æ”¹è¡Œå‡¦ç†
   $comment = str_replace("\r\n", "\r", $post['comment']);
-  $comment = str_replace("\r", "\n", $comment);//‰üs•¶š“ˆê
-  $comment = preg_replace("/\n{2,}/", "\n\n", $comment);//2sˆÈã‚Ì‰üs‚ğ2s‚É
+  $comment = str_replace("\r", "\n", $comment);//æ”¹è¡Œæ–‡å­—çµ±ä¸€
+  $comment = preg_replace("/\n{2,}/", "\n\n", $comment);//2è¡Œä»¥ä¸Šã®æ”¹è¡Œã‚’2è¡Œã«
   if (substr_count($comment, "\n") > MAXBR) error("Line break is too long!");
   $comment = eregi_replace("&amp;([0-9a-z#]+);", "&\\1;", $comment);
-  $post['comment'] = str_replace("\n", "<br>", $comment);//\n‚ğbr‚É
+  $post['comment'] = str_replace("\n", "<br>", $comment);//\nã‚’brã«
 
-  // ŠÔAIPAíœƒL[AF
+  // æ™‚é–“ã€IPã€å‰Šé™¤ã‚­ãƒ¼ã€è‰²
   $post['now'] = gmdate("Y/m/d(D) H:i:s",time()+9*60*60);
   $post['url'] = eregi_replace("^http://", "", $post['url']);
   $post['url'] = str_replace(" ", "", $post['url']);
@@ -543,24 +543,24 @@ function check() {
 
   return $post;
 }
-/*-- ƒƒO‘‚İˆ— --*/
+/*-- ãƒ­ã‚°æ›¸è¾¼ã¿å‡¦ç† --*/
 function log_write($post) {
   global $admin_mail;
-  // VNO.
+  // æ–°NO.
   $fp = fopen(LOGFILE, "r");
   $fline = fgets($fp, 2048);
   fclose($fp);
-  // d•¡ƒJƒLqƒ`ƒFƒbƒN
+  // é‡è¤‡ã‚«ã‚­å­ãƒã‚§ãƒƒã‚¯
   list($num,$rname,$rcom,$rip,)  = explode("<>", $fline);
   if ($rname == $post['name'] && $rcom == $post['comment']) error("You just said this!");
-  // VNo.
+  // æ–°No.
   $newnum = $num+1;
   $font = $post['font'].";".$post['hr'];
   $post['pass'] = crypt($post['delkey'], my_crypt($post['delkey']));
-  // æ“ª—pƒf[ƒ^A‹L–ƒf[ƒ^¶¬
+  // å…ˆé ­ç”¨ãƒ‡ãƒ¼ã‚¿ã€è¨˜äº‹ãƒ‡ãƒ¼ã‚¿ç”Ÿæˆ
   $newfline = "$newnum<>{$post['name']}<>{$post['comment']}<>{$post['ip']}<>".time()."\n";
   $newline = "$newnum<>{$post['now']}<>{$post['name']}<>{$post['email']}<>{$post['subject']}<>{$post['comment']}<>{$post['url']}<>$font<>{$post['ico']}<>{$post['type']}<>{$post['pass']}<>{$post['ip']}<><>\n";
-  // ƒNƒbƒL[ƒZƒbƒgA2TŠÔ—LŒø
+  // ã‚¯ãƒƒã‚­ãƒ¼ã‚»ãƒƒãƒˆã€2é€±é–“æœ‰åŠ¹
   setcookie("ibbs[name]", $post['name'], time()+14*86400);
   setcookie("ibbs[email]", $post['email'], time()+14*86400);
   setcookie("ibbs[ico]", $post['ico'], time()+14*86400);
@@ -574,7 +574,7 @@ function log_write($post) {
 There was a post
 Name     : {$post['name']}
 Title : {$post['subject']}
-‚t‚q‚k@ : {$post['url']}
+ï¼µï¼²ï¼¬ã€€ : {$post['url']}
 Reply to Post No.  : {$newnum}
 Text : 
 {$post['comment']}
@@ -591,19 +591,19 @@ EOL;
       $from = " <nomail@xxxx.xxx>";
     }
     $head = "From: ".$from;
-    //‘—M
+    //é€ä¿¡
     mb_language('english');
     mb_internal_encoding('SJIS');
     @mb_send_mail($admin_mail, $mail_sub, $mail_body, $head);
   }
 	
   $lines = file(LOGFILE);
-  array_shift($lines);//ˆês–Ú—¬‚·
+  array_shift($lines);//ä¸€è¡Œç›®æµã™
 
-  // e‹L–‚Ìê‡Bæ“ª‚É’Ç‰Á
+  // è¦ªè¨˜äº‹ã®å ´åˆã€‚å…ˆé ­ã«è¿½åŠ 
   if ($post['type'] == 0) {
     array_unshift($lines, $newline);
-    // ‰ß‹ƒƒO
+    // éå»ãƒ­ã‚°
     $kako = array();
     $over = false;
     for ($i = 0; $i < count($lines); $i++) {
@@ -617,7 +617,7 @@ EOL;
     }
     if (PAST && is_array($kako)) past_write($kako);
   }
-  // ƒŒƒX‚Ìê‡BŠY“–‹L–ŒŸõ
+  // ãƒ¬ã‚¹ã®å ´åˆã€‚è©²å½“è¨˜äº‹æ¤œç´¢
   else{
     $find = false;
     $res = array();
@@ -637,23 +637,23 @@ EOL;
       }
     }
     if (!$find) error("Post number not found.");
-    // ƒAƒQ‚Ìê‡AŠY“–ƒXƒŒíœ‚µ‚ÄAVƒXƒŒ‚ÆŒ‹‡
+    // ã‚¢ã‚²ã®å ´åˆã€è©²å½“ã‚¹ãƒ¬å‰Šé™¤ã—ã¦ã€æ–°ã‚¹ãƒ¬ã¨çµåˆ
     if (AGE) {
       array_splice($lines, $st, count($res)-1);
       $newlines = array_merge($res, $lines);
       $lines = $newlines;
     }
-    // ƒTƒQ‚Ìê‡AVƒXƒŒ‚É’uŠ·
+    // ã‚µã‚²ã®å ´åˆã€æ–°ã‚¹ãƒ¬ã«ç½®æ›
     else{
       array_splice($lines, $st, count($res)-1, $res);
     }
   }
-  // æ“ª—pƒf[ƒ^’Ç‰Á
+  // å…ˆé ­ç”¨ãƒ‡ãƒ¼ã‚¿è¿½åŠ 
   array_unshift($lines, $newfline);
-  // ƒƒOXV
+  // ãƒ­ã‚°æ›´æ–°
   update($lines);
 }
-/*-- ŒÂ•Ê‹L–íœ --*/
+/*-- å€‹åˆ¥è¨˜äº‹å‰Šé™¤ --*/
 function del() {
   if (trim($_POST['del']) == "") error("No post number entered!!");
   if (trim($_POST['delkey']) == "") error("No password Entered!");
@@ -675,7 +675,7 @@ function del() {
 
   update($lines);
 }
-/*-- ŒÂ•Ê‹L–•ÒW•\¦ --*/
+/*-- å€‹åˆ¥è¨˜äº‹ç·¨é›†è¡¨ç¤º --*/
 function edit() {
   global $html_icon;
 
@@ -711,7 +711,7 @@ function edit() {
   $arg['self'] = PHP_SELF;
   HtmlTemplate::t_include(OTHERFILE,$arg);
 }
-/*-- •ÒW‘‚«’¼‚µ --*/
+/*-- ç·¨é›†æ›¸ãç›´ã— --*/
 function rewrite($post, $target) {
   $lines = file(LOGFILE);
   $find = false;
@@ -729,13 +729,13 @@ function rewrite($post, $target) {
 
   update($lines);
 }
-/*-- ŒŸõ --*/
+/*-- æ¤œç´¢ --*/
 function search() {
   if (trim($_GET['w']) != "") {
-    // ƒXƒy[ƒX‹æØ‚è‚ğ”z—ñ‚É
+    // ã‚¹ãƒšãƒ¼ã‚¹åŒºåˆ‡ã‚Šã‚’é…åˆ—ã«
     $word = htmlspecialchars($_GET['w']);
-    $words = preg_split("/(@| )+/", $word);
-    // ƒƒOŒˆ’è
+    $words = preg_split("/(ã€€| )+/", $word);
+    // ãƒ­ã‚°æ±ºå®š
     if ($_GET['logs'] == 0) {
       $lines = file(LOGFILE);
       array_shift($lines);
@@ -747,20 +747,20 @@ function search() {
       return false;
     }
     $result = array();
-    foreach ($lines as $line) {	//ƒƒO‚ğ‘–¸
-      $find = FALSE;			//ƒtƒ‰ƒO
+    foreach ($lines as $line) {	//ãƒ­ã‚°ã‚’èµ°æŸ»
+      $find = FALSE;			//ãƒ•ãƒ©ã‚°
       foreach ($words as $w) {
-        if ($w == "") continue;	//‹ó•¶š‚ÍƒpƒX
-        if (stristr($line, $w)) {	//ƒ}ƒbƒ`
+        if ($w == "") continue;	//ç©ºæ–‡å­—ã¯ãƒ‘ã‚¹
+        if (stristr($line, $w)) {	//ãƒãƒƒãƒ
           $find = TRUE;
           if ($_GET['kyo']) $line = str_replace($w, "<b style='color:green;background-color:#ffff66'>$w</b>", $line);
         }
-        elseif ($_GET['andor'] == "and") {	//AND‚Ìê‡ƒ}ƒbƒ`‚µ‚È‚¢‚È‚çŸ‚ÌƒƒO‚Ö
+        elseif ($_GET['andor'] == "and") {	//ANDã®å ´åˆãƒãƒƒãƒã—ãªã„ãªã‚‰æ¬¡ã®ãƒ­ã‚°ã¸
           $find = FALSE;
           break;
         }
       }
-      if($find) array_push($result, $line);	//ƒ}ƒbƒ`‚µ‚½ƒƒO‚ğ”z—ñ‚É
+      if($find) array_push($result, $line);	//ãƒãƒƒãƒã—ãŸãƒ­ã‚°ã‚’é…åˆ—ã«
     }
     $arg['total'] = count($result);
     if (get_magic_quotes_gpc()) $word = stripslashes($word);
@@ -769,7 +769,7 @@ function search() {
     if (count($result) > 0) {
       $page_def = ($_GET['pp']) ? (int)$_GET['pp'] : PASTDEF;
       $page = ($_GET['page']) ? (int)$_GET['page'] : 0;
-      // ‹L–•\¦
+      // è¨˜äº‹è¡¨ç¤º
       for ($i = $page; $i < $page+$page_def; $i++) {
         $oya = $res = "";
         if (!trim($result[$i])) break;
@@ -780,18 +780,18 @@ function search() {
         if ($icon != "") $icon = I_DIR.$icon;
         if ($type == 0) $oya = true;
         else $res = $type;
-        // e‹L–Ši”[
+        // è¦ªè¨˜äº‹æ ¼ç´
         $arg['out'][] = compact('num','date','name','email','subj','com','b_color','color','icon','host','oya','res','over','page');
       }
       $arg['page_def'] = $page_def;
       $arg['st'] = $page + 1;
       $arg['to'] = $i;
-      // ƒy[ƒW‘O/Ÿ
+      // ãƒšãƒ¼ã‚¸å‰/æ¬¡
       $prev = $page - $page_def;
       $next = $i;
       if ($prev >= 0)          $arg['prev'] = "{$_SERVER['PHP_SELF']}?mode=s&w=$word&andor=$andor&log=$log&pp=$page_def&page=$prev";
       if ($next < count($result)) $arg['next'] = "{$_SERVER['PHP_SELF']}?mode=s&w=$word&andor=$andor&log=$log&pp=$page_def&page=$next";
-      // ƒy[ƒW’¼ÚˆÚ“®
+      // ãƒšãƒ¼ã‚¸ç›´æ¥ç§»å‹•
       $tpage = ceil(count($result) / $page_def);
       for ($a = 0; $a < $tpage; $a++) {
         if ($a == $page/$page_def) $arg['paging'].= "[<b>$a</b>] ";
@@ -813,13 +813,13 @@ function search() {
   $arg['self'] = PHP_SELF;
   HtmlTemplate::t_include(OTHERFILE,$arg);
 }
-/*-- ‰ß‹ƒƒO•\¦ --*/
+/*-- éå»ãƒ­ã‚°è¡¨ç¤º --*/
 function past_view($logs, $page) {
   if ($logs == "0") $logs = 1;
   if (file_exists(PASTDIR.$logs.".txt")) {
     $lines = file(PASTDIR.$logs.".txt");
     if (!$page) $page = 0;
-    // ‹L–•\¦
+    // è¨˜äº‹è¡¨ç¤º
     for ($i = $page; $i < $page+PASTDEF; $i++) {
       if (!trim($lines[$i])) break;
       list($num,$date,$name,$email,$subj,$com,$url,
@@ -829,18 +829,18 @@ function past_view($logs, $page) {
       if ($icon != "") $icon = I_DIR.$icon;
       if ($type == 0) $oya = true;
       else $res = $type;
-      // e‹L–Ši”[
+      // è¦ªè¨˜äº‹æ ¼ç´
       $arg['out'][] = compact('num','date','name','email','subj','com','b_color','color','icon','host','oya','res','over','page');
     }
     $arg['page_def'] = PASTDEF;
     $arg['st'] = $page + 1;
     $arg['to'] = $i;
-    // ƒy[ƒW‘O/Ÿ
+    // ãƒšãƒ¼ã‚¸å‰/æ¬¡
     $prev = $page - PASTDEF;
     $next = $i;
     if ($prev >= 0)          $arg['prev'] = "{$_SERVER['PHP_SELF']}?mode=log&logs=$logs&page=$prev";
     if ($next < count($lines)) $arg['next'] = "{$_SERVER['PHP_SELF']}?mode=log&logs=$logs&page=$next";
-    // ƒy[ƒW’¼ÚˆÚ“®
+    // ãƒšãƒ¼ã‚¸ç›´æ¥ç§»å‹•
     $tpage = (int)count($lines) / PASTDEF;
     for ($a = 0; $a < $tpage; $a++) {
       if ($a == $page/PASTDEF) $arg['paging'].= "[<b>$a</b>] ";
@@ -865,15 +865,15 @@ function past_view($logs, $page) {
   $arg['self'] = PHP_SELF;
   HtmlTemplate::t_include(OTHERFILE,$arg);
 }
-/*-- ‰ß‹ƒƒO‘‚İ --*/
+/*-- éå»ãƒ­ã‚°æ›¸è¾¼ã¿ --*/
 function past_write($lines) {
-  // ‰ß‹ƒƒONo“Ç‚İ‚İ
+  // éå»ãƒ­ã‚°Noèª­ã¿è¾¼ã¿
   $fp = fopen(PASTLOG, "r");
   $cnt = fgets($fp, 10);
   fclose($fp);
   $pfile = PASTDIR . $cnt . ".txt";
   if (file_exists($pfile)) {
-    // ‰ß‹ƒƒOƒTƒCƒYƒI[ƒo[‚È‚ç‰ß‹ƒƒONoƒAƒbƒv
+    // éå»ãƒ­ã‚°ã‚µã‚¤ã‚ºã‚ªãƒ¼ãƒãƒ¼ãªã‚‰éå»ãƒ­ã‚°Noã‚¢ãƒƒãƒ—
     if (filesize($pfile) > PASTSIZE*1024) {
       $cnt++;
       $fp = fopen(PASTLOG, "w");
@@ -884,14 +884,14 @@ function past_write($lines) {
       $pfile = PAST_DIR . $cnt . ".txt";
     }
   }
-  // ‰ß‹ƒƒO‚É‘‚İ
+  // éå»ãƒ­ã‚°ã«æ›¸è¾¼ã¿
   $fp = fopen($pfile, "a");
   set_file_buffer($fp, 0);
   flock($fp, LOCK_EX);
   fputs($fp, implode('', $lines));
   fclose($fp);
 }
-/*-- ƒƒOXV --*/
+/*-- ãƒ­ã‚°æ›´æ–° --*/
 function update($lines) {
   $fp = fopen(LOGFILE, "w");
   set_file_buffer($fp, 0);
@@ -899,11 +899,11 @@ function update($lines) {
   fputs($fp, implode('', $lines));
   fclose($fp);
 }
-/*-- ©“®ƒŠƒ“ƒN --*/
+/*-- è‡ªå‹•ãƒªãƒ³ã‚¯ --*/
 function autolink($str) {
     return ereg_replace("(https?|ftp)(://[[:alnum:]\+\$\;\?\.%,!#~*/:@&=_-]+)","<a href=\"\\1\\2\" target=_top>\\1\\2</a>",$str);
 }
-/*-- ˆÃ†‰»ŠÖ” --*/
+/*-- æš—å·åŒ–é–¢æ•° --*/
 function my_crypt($str) {
   $time = time();
   list($p1, $p2) = unpack("C2", $time);
@@ -911,7 +911,7 @@ function my_crypt($str) {
   $saltset = array_merge(range('a', 'z'),range('A', 'Z'),range('0', '9'),array('/'));
   return $saltset[$wk % 64] . $saltset[$time % 64];
 }
-/*-- ƒGƒ‰[•\¦ --*/
+/*-- ã‚¨ãƒ©ãƒ¼è¡¨ç¤º --*/
 function error($str) {
   $arg['error'] = $str;
   $arg['err_mode'] = true;
@@ -920,57 +920,57 @@ function error($str) {
   HtmlTemplate::t_include(OTHERFILE,$arg);
   exit;
 }
-/*-- ƒfƒoƒO --*/
+/*-- ãƒ‡ãƒã‚° --*/
 function _dbg($str) {
   echo "<pre>";
   var_export($str);
   echo "</pre>";
 }
-// ƒXƒ^[ƒgI
+// ã‚¹ã‚¿ãƒ¼ãƒˆï¼
 $page = intval($_GET['page']);
 $mode = ($_GET['mode']) ? $_GET['mode'] : $_POST['mode'];
 
 switch ($mode) {
-  // ‘‚İ
+  // æ›¸è¾¼ã¿
   case 'write':
     $data = check();
     log_write($data);
     header("Location: $jump");
   //echo "<META HTTP-EQUIV=\"refresh\" content=\"0;URL=".PHP_SELF."?\">";
     break;
-  // íœ
+  // å‰Šé™¤
   case 'del':
     del();
     header("Location: $jump");
     //echo "<META HTTP-EQUIV=\"refresh\" content=\"0;URL=".PHP_SELF."?\">";
     break;
-  // •ÒW
+  // ç·¨é›†
   case 'edit':
     edit();
     break;
-  // •ÒW‘‚İ
+  // ç·¨é›†æ›¸è¾¼ã¿
   case 'rewrite':
     $data = check();
     rewrite($data, intval($_POST['num']));
     echo "<META HTTP-EQUIV=\"refresh\" content=\"0;URL=".PHP_SELF."?\">";
     break;
-  // ŠÇ—
+  // ç®¡ç†
   case 'admin':
     all_view($page, "admin");
     break;
-  // ƒŒƒX•\¦
+  // ãƒ¬ã‚¹è¡¨ç¤º
   case 'res':
     res_view(intval($_GET['num']));
     break;
-  // ŒŸõ
+  // æ¤œç´¢
   case 's':
     search();
     break;
-  // ‰ß‹ƒƒO•\¦
+  // éå»ãƒ­ã‚°è¡¨ç¤º
   case 'log':
     past_view(intval($_GET['logs']), $page);
     break;
-  // ƒAƒCƒRƒ“ˆê——
+  // ã‚¢ã‚¤ã‚³ãƒ³ä¸€è¦§
   case 'img':
     $l=1;
     foreach ($html_icon as $key=>$val) {
@@ -985,7 +985,7 @@ switch ($mode) {
     $arg['self'] = PHP_SELF;
     HtmlTemplate::t_include(OTHERFILE,$arg);
     break;
-  // ƒwƒ‹ƒv•\¦
+  // ãƒ˜ãƒ«ãƒ—è¡¨ç¤º
   case 'man':
     $arg['man_mode'] = true;
     $arg['title'] = "How to use CKIB";
@@ -993,7 +993,7 @@ switch ($mode) {
     $arg['self'] = PHP_SELF;
     HtmlTemplate::t_include(OTHERFILE,$arg);
     break;
-  // V‹K“Še•Ê‰æ–Ê
+  // æ–°è¦æŠ•ç¨¿åˆ¥ç”»é¢
   case 'post':
     $arg['post_mode'] = true;
     $arg['title'] = "New";
@@ -1004,7 +1004,7 @@ switch ($mode) {
     $arg['self'] = PHP_SELF;
     HtmlTemplate::t_include(OTHERFILE,$arg);
     break;
-  // ’Êí•\¦
+  // é€šå¸¸è¡¨ç¤º
   default:
     all_view($page);
 }
